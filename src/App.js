@@ -24,11 +24,11 @@ function App() {
       <Categorias />
       </MenuMobileContext>
       <Routes> 
-        <Route path='/' element={<Home />}/>
-        <Route path='/filmes/todos/*' element={<Filmes />}/>
-        <Route path='/series/todos/*' element={<Series />}/>
-        <Route path='/pessoas/todos/*' element={<Pessoas />}/>
-        <Route path='*' element={<NotFound />}/>
+        <Route path='/tvsearch' element={<Home />}/>
+        <Route path='/tvsearch/filmes/todos/*' element={<Filmes />}/>
+        <Route path='/tvsearch/series/todos/*' element={<Series />}/>
+        <Route path='/tvsearch/pessoas/todos/*' element={<Pessoas />}/>
+        <Route path='/tvsearch/*' element={<NotFound />}/>
       </Routes>
       <Footer />
       </BrowserRouter>
