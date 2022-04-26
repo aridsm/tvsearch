@@ -17,7 +17,7 @@ const Trailer = ({type}) => {
         await request(url)
       }
       fetchData()
-    }, [request, param])
+    }, [request, param, type])
 
   if (error) return <Error />
   if (loading) return <Loading />
