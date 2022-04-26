@@ -1,0 +1,9 @@
+.video {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--cor-4);
+    height: auto;
+}
+.video h2 {
+    margin-bottom: 2rem;
+}

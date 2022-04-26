@@ -1,0 +1,16 @@
+.text {
+    font-weight: 900;
+    font-size: 2.25rem;
+    width:100%;
+    height: calc(100vh - 8.5rem - 3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text p {
+    color: var(--cor-1);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}

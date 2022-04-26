@@ -1,0 +1,129 @@
+.searchSection{
+    position: relative;
+    max-width: 25rem;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    z-index: 999;
+}
+
+.form input {
+    padding: 0.7rem;
+    background: var(--cor-4);
+    border: 1px solid transparent;
+    font-family: inherit;
+    color: var(--cor-2);
+    outline: none;
+    width: 100%;
+}
+
+.form input::placeholder {
+    font-style: italic;
+    color: var(--cor-5);
+    font-size: 0.875rem;
+}
+
+.form input:focus, .form input:hover {
+    border-color: var(--cor-1);
+}
+
+.form > svg{
+    position: absolute;
+    right: 1rem;
+    height: calc(100% - 2px);
+    width: 1rem;
+    background: var(--cor-4);
+
+}
+
+.searchResults {
+    position: absolute;
+    background: var(--cor-3);
+    border:1px solid var(--cor-4);
+    border-radius: 0.2rem;
+    width: 100%;
+    top:0;
+    left:0;
+    padding: 4.5rem 1rem 1rem 1rem;
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.searchResults ul {
+    overflow: auto;
+    max-height: 26rem;
+}
+
+.searchResults li {
+    list-style: none;
+}
+
+.itemSearch a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1rem 0.7rem 0
+}
+
+.itemSearch + .itemSearch{
+    border-top: 1px solid var(--cor-4);
+}
+
+.itemSearch:hover {
+    background: var(--cor-4);
+}
+
+.typeSearch {
+    font-size: 0.875rem;
+    color: var(--cor-5);
+    font-style: italic;
+}
+
+.titleSearch {
+    max-width: 10rem;
+}
+
+.btnMostrarBarra {
+    display: block;
+    border: 1px solid var(--cor-1);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: auto;
+}
+
+
+@media all and (max-width: 500px) {
+    .form input {
+        display: none;
+        position: absolute;
+        top: 4rem;
+        right:-2rem;
+        width: 15rem;
+
+    }
+    
+    .form .searchBarMobile {
+    display: block;
+    }
+
+    .searchResults {
+        position: absolute;
+        background: var(--cor-3);
+        border:1px solid var(--cor-4);
+        border-radius: 0.2rem;
+        width: 17rem;
+        top:4.4rem;
+        left:initial;
+        right:-2rem;
+        padding: 4.5rem 1rem 1rem 1rem;
+    }
+}

@@ -1,13 +1,43 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Home from './Components/Home';
+import Categorias from './Components/Categorias';
+import Filmes from './Components/Rotas/Filmes';
+import Series from './Components/Rotas/Series';
+import Pessoas from './Components/Rotas/Pessoas';
+import NotFound from './NotFound';
+import { GlobalContext } from './Components/ThemeModeContext';
+import MenuMobileContext from './Components/MenuMobileContext';
 
 function App() {
+
+  const {mode} = React.useContext(GlobalContext)
+
   return (
-    <div className="App">
-      
+    <div className={`App ${mode === 'dark' ? 'dark' : 'light'}`}>
+      <BrowserRouter>
+      <MenuMobileContext>
+      <Header />
+      <Categorias />
+      </MenuMobileContext>
+      <Routes> 
+        <Route path='/' element={<Home />}/>
+        <Route path='/filmes/todos/*' element={<Filmes />}/>
+        <Route path='/series/todos/*' element={<Series />}/>
+        <Route path='/pessoas/todos/*' element={<Pessoas />}/>
+        <Route path='*' element={<NotFound />}/>
+      </Routes>
+      <Footer />
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
+//quando clicar na página filmes, faz um fetch em todos os filmes
+//notar que a página filmes, pessoas e series são iguais.
+//cada uma deve, entao, ser um mesmo componente.

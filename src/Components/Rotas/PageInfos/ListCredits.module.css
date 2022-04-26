@@ -1,0 +1,18 @@
+.img {
+    width: 8rem
+}
+
+.img img {
+    width:100%
+}
+
+.link + .link {
+    margin-left: 2rem;
+}
+
+.name {
+    font-size: 0.875rem;
+    color: var(--cor-5);
+    margin: 0.2rem 0;
+    font-style: italic;
+}

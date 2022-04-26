@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    background: var(--cor-1);
+    height: 3rem;
+    color: var(--cor-4);
+    font-style: italic;
+    font-weight: 900;
+    height: 4rem;
+}
+
+.footer a {
+    margin-left: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer svg {
+    margin-left: 0.4rem;
+}
+
+@media all and (max-width: 1050px) {
+    .footer {
+        grid-column: 1;
+    }
+}

@@ -1,38 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;0,900;1,400&display=swap');
+
+:root {
+    font-size: 15px;
+    --cor-6: rgb(14, 199, 14);
+    --cor-7:rgb(221, 94, 20);
+    --cor-8:rgb(201, 173, 15);
+    --cor-9: rgb(122, 122, 122);
+}
+
+.App.dark {
+    --cor-1: #0DAA84;
+    --cor-2: #F9F9F9;
+    --cor-3: #151a1f;
+    --cor-4: rgb(13, 13, 19);
+    --cor-5: rgba(255, 255, 255, 0.4);
+    background: var(--cor-3);
+    color: var(--cor-2);
+}
+
+.App.light {
+    --cor-1: #0DAA84;
+    --cor-2: rgb(15, 15, 15);
+    --cor-3: #ffffff;
+    --cor-4: #dee4e2;
+    --cor-5: rgb(0, 0, 0, 0.6);
+    background: var(--cor-3);
+    color: var(--cor-2);
+}
+
 .App {
-  text-align: center;
+    overflow-y: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-y: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a, button {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit
 }
 
-.App-link {
-  color: #61dafb;
+a {
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    margin: 0;
+    cursor: pointer;
+    background: transparent;
+    border:none
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.grid2 {
+    grid-column: 2;
+}
+
+.miniTitle {
+    color: var(--cor-1);
+    font-style: italic;
+    font-size: 0.875rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0.3rem;
+    border:1px solid var(--cor-5)
+}
+
+.minHeight {
+    min-height: calc(100vh - 8.5rem - 3px);
+}
+
+.noImage {
+    background: rgb(194, 194, 194);
+    width: 100%;
+    height: 15rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(119, 119, 119);
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+.noImage.little {
+    height: 12rem
+}
+
+.pagesContainer {
+    max-width: 45rem;
+    width:100%;
+    margin: 0 auto;
+    padding: 4rem 1rem
+}
+
+h2 {
+    color: var(--cor-5);
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.marginTop {
+    margin-top: calc(4.5rem + 3px);
+}
+
+@media all and (max-width: 1050px) {
+    .App {
+        grid-template-columns:  1fr;
+    }
+    .grid2 {
+        grid-column: 1;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .pagesContainer {
+        width: 32rem
+    }
+}
+
+@media all and (max-width: 500px) {
+    .pagesContainer {
+        max-width: 23rem
+    }
+}
+
+@media all and (max-width: 360px) {
+    .pagesContainer {
+        max-width: 17rem
+    }
 }

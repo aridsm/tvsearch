@@ -1,0 +1,94 @@
+.filmes {
+    padding: 3rem;
+}
+
+.filmes section {
+    display: grid;
+    gap: 3rem 2rem;
+    grid-template-columns: repeat(auto-fit, 12rem);
+    justify-content: center;
+    margin: 3rem 0
+}
+
+.filmes h1 {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+    font-weight: 900;
+}
+
+.filmes header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
+
+.containerPages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 1 / -1;
+    color: var(--cor-5);
+    font-size: 0.875rem;
+}
+
+.pageNumber {
+    text-align: center;
+    list-style: none;
+    height: 100%;
+}
+
+.pageLink, .previousPage, .nextPage, .breakPage {
+    display: block;
+    width: 3rem;
+    height: 100%;
+    background: var(--cor-4);
+    cursor: pointer;
+    transition: 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.2rem;
+    border-radius: 0.2rem;
+    padding: 0.3rem 0
+}
+
+.pageLink:hover, .previousPage:hover, .nextPage:hover {
+    color: var(--cor-2);
+}
+
+.previousPage, .nextPage {
+    list-style: none;
+    width: 3rem;
+    background: var(--cor-3);
+}
+
+.breakPage {
+    list-style: none;
+    font-size: 2rem;
+    background: transparent;
+    width: 2rem;
+}
+
+.activeLink {
+    border:1px solid var(--cor-1);
+    color: var(--cor-2);
+}
+
+@media all and (max-width: 600px) {
+    .pageLink {
+        width: 2rem;
+        margin: 0 0.1rem;
+    }
+    .previousPage, .nextPage {
+        margin: 0 0.1rem;
+    }
+    .breakPage {
+        margin: 0;
+    }
+    .pageNumber, .breakPage, .nextPage, .previousPage {
+        font-size: 0.8rem;
+    }
+    .previousPage, .nextPage {
+        width: 1.5rem;
+    }
+}
