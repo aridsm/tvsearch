@@ -11,8 +11,8 @@
 .App.dark {
     --cor-1: #0DAA84;
     --cor-2: #F9F9F9;
-    --cor-3: #151a1f;
-    --cor-4: rgb(13, 13, 19);
+    --cor-3: #1b2227;
+    --cor-4: rgb(20, 24, 29);
     --cor-5: rgba(255, 255, 255, 0.4);
     background: var(--cor-3);
     color: var(--cor-2);
@@ -20,10 +20,10 @@
 
 .App.light {
     --cor-1: #0DAA84;
-    --cor-2: rgb(15, 15, 15);
+    --cor-2: rgb(20, 24, 29);
     --cor-3: #ffffff;
-    --cor-4: #dee4e2;
-    --cor-5: rgb(0, 0, 0, 0.6);
+    --cor-4: #e7ebea;
+    --cor-5: #1b2227;
     background: var(--cor-3);
     color: var(--cor-2);
 }

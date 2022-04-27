@@ -96,6 +96,7 @@
 }
 
 .menuCategorias svg {
+    transition: 0.2s;
     fill: var(--cor-2);
     width: 1.5rem;
 }
@@ -109,7 +110,12 @@
 }
 
 .btnMobile svg {
-    fill: var(--cor-2)
+    fill: var(--cor-2);
+    transition: 0.2s;
+}
+
+.menuCategorias svg:hover, .btnCategoriasAtivo svg, .btnMobileAtivo svg, .btnMobile svg:hover {
+    fill: var(--cor-1)
 }
 
 .menuMobile {

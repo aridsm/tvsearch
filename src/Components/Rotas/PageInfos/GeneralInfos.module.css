@@ -64,14 +64,11 @@
 }
 
 .genres {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 10rem);
+    grid-gap: 0.5rem;
     color: var(--cor-5);
     margin: 1rem 0;
-}
-
-.genres p + p {
-    margin-left: 1rem;
 }
 
 .avaliacao {

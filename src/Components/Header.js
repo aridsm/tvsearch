@@ -17,50 +17,65 @@ const Header = () => {
   const {mode, changeMode} = React.useContext(GlobalContext)
   const mobileGeral = useMedia('(max-width: 900px)')
   const mobileCategorias = useMedia('(max-width: 1050px)')
-  const [menuCategorias, setMenuCategorias] = React.useState(false)
   const {setIsMenuCategoriasOpen} = React.useContext(MenuContext)
 
-  const ref = React.useRef()
-  const {isVisible, setIsVisible} = useVisibility(ref)
+  const refBtnMobile = React.useRef()
+  const visibilityMenuMobile = useVisibility(refBtnMobile)
+
+  const refBtnCategorias = React.useRef()
+  const visibilityMenuCategorias = useVisibility(refBtnCategorias)
 
   React.useEffect(() => {
-    setIsMenuCategoriasOpen(menuCategorias)
-  }, [menuCategorias, setIsMenuCategoriasOpen])
+    setIsMenuCategoriasOpen(visibilityMenuCategorias.isVisible)
+  }, [visibilityMenuCategorias.isVisible, setIsMenuCategoriasOpen])
+
 
   function handleClickBtnGeral() {
-    setIsVisible(true)
+    visibilityMenuMobile.setIsVisible(true)
   }
+
+  function handleClickBtnCategorias() {
+  visibilityMenuCategorias.setIsVisible(true)
+}
 
   return (
     <header className={styles.header}>
       <div className={styles.container}>
       {mobileCategorias &&
-      <button aria-label='Abrir menu categorias' className={styles.menuCategorias} onClick={()=> setMenuCategorias(!menuCategorias)}>
-        <MenuSvg />
+      <button
+      aria-label='Abrir menu categorias'
+      ref={refBtnCategorias} 
+      className={`${styles.menuCategorias} ${visibilityMenuCategorias.isVisible ? styles.btnCategoriasAtivo : ''}`} 
+      onClick={handleClickBtnCategorias}>
+      <MenuSvg />
       </button>
       }
       <Link to='/tvsearch' className={styles.logo} aria-label='Home'><FilmSvg />TVSearch</Link>
       <SearchForm
       label='Procure por um filme, programa de TV ou pessoa'
       type='search'/>
-      <div className={`${styles.menu} ${mobileGeral ? styles.menuMobile : ''} ${isVisible ? styles.menuGeralAtivo : ''}`}>
+      <div className={`${styles.menu} ${mobileGeral ? styles.menuMobile : ''} ${visibilityMenuMobile.isVisible ? styles.menuGeralAtivo : ''}`}>
       <nav>
         <NavLink to='/tvsearch/filmes/todos?pagina=1'>Filmes</NavLink>
         <NavLink to='/tvsearch/series/todos?pagina=1'>Séries</NavLink>
         <NavLink to='/tvsearch/pessoas/todos?pagina=1'>Pessoas</NavLink>
       </nav>
       <button className={styles.mode} onClick={changeMode}>
-        Mode: 
+        Modo: 
         {mode === 'dark'
         ?
-        <p>Dark <MoonSvg /></p>
+        <p>Escuro <MoonSvg /></p>
         :
-        <p>Light <SunSvg /></p>
+        <p>Claro <SunSvg /></p>
         }
       </button>
       </div>
       {mobileGeral &&
-      <button ref={ref} className={styles.btnMobile} aria-label='Abrir menu' onClick={handleClickBtnGeral}>
+      <button 
+      ref={refBtnMobile} 
+      className={`${styles.btnMobile} ${visibilityMenuMobile.isVisible ? styles.btnMobileAtivo : ''}`} 
+      aria-label='Abrir menu' 
+      onClick={handleClickBtnGeral}>
         <ListSvg />
       </button>
       }

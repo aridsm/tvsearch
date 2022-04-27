@@ -58,7 +58,7 @@ const SearchForm = ({label, type}) => {
         .map(item =>
         <li key={item.name + item.title} className={styles.itemSearch}>
          <Link
-         to={`/${item.media_type === 'movie' ? 'filmes' : item.media_type === 'tv' ? 'series' : 'pessoas' }/todos/${item.id}`}>
+         to={`/tvsearch/${item.media_type === 'movie' ? 'filmes' : item.media_type === 'tv' ? 'series' : 'pessoas' }/todos/${item.id}`}>
          <p className={styles.titleSearch}>{item.name || item.title}</p>
          <p className={styles.typeSearch}>Em {item.media_type === 'movie' ? 'filmes' : item.media_type === 'tv' ? 'séries' : 'pessoas' }</p>
          </Link>

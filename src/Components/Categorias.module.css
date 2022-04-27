@@ -52,6 +52,7 @@
 
     .categorias aside {
         display: none;
+        overflow: auto;
     }
 
      aside.menuMobile{
