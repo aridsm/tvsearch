@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tvsearch/static/css/main.7ca38dbd.css",
+    "main.css": "/tvsearch/static/css/main.4cdec414.css",
     "main.js": "/tvsearch/static/js/main.1ad0a26c.js",
     "static/media/menu.svg": "/tvsearch/static/media/menu.7f30709c9555014c9f86dcc3b4477cbb.svg",
     "static/media/logotmdb.svg": "/tvsearch/static/media/logotmdb.bf7f470b3821af1da7fa249c87dadea3.svg",
@@ -12,11 +12,11 @@
     "static/media/film.svg": "/tvsearch/static/media/film.44e6b45cf3936ddccf6e4bc91199708c.svg",
     "static/media/list.svg": "/tvsearch/static/media/list.a88f61d80d3fbadea343bb206ab287c0.svg",
     "static/media/search.svg": "/tvsearch/static/media/search.10ddad2caf268fabea1d9546488728fc.svg",
-    "main.7ca38dbd.css.map": "/tvsearch/static/css/main.7ca38dbd.css.map",
+    "main.4cdec414.css.map": "/tvsearch/static/css/main.4cdec414.css.map",
     "main.1ad0a26c.js.map": "/tvsearch/static/js/main.1ad0a26c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ca38dbd.css",
+    "static/css/main.4cdec414.css",
     "static/js/main.1ad0a26c.js"
   ]
 }
