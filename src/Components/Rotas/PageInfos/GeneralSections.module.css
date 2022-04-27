@@ -92,3 +92,10 @@
         width: 1.5rem;
     }
 }
+
+@media all and (max-width: 1050px) {
+    .filmes h1 {
+        font-size: 2.225rem;
+        margin-bottom: 4rem;
+    }
+}

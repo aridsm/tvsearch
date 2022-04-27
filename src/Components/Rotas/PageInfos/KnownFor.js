@@ -37,7 +37,7 @@ const KnownFor = ({id}) => {
             id={item.id}
             name={item.title}
             character={item.character}
-            linkTo={item.media_type === 'movie' ? `tvsearch/filmes/todos/${item.id}` : `tvsearch/series/todos/${item.id}`}
+            linkTo={item.media_type === 'movie' ? `/tvsearch/filmes/todos/${item.id}` : `/tvsearch/series/todos/${item.id}`}
             />)
             }
             </div>
@@ -57,7 +57,7 @@ const KnownFor = ({id}) => {
             id={item.id}
             name={item.title}
             character={item.department}
-            linkTo={item.media_type === 'movie' ? `/filmes/todos/${item.id}` : `/series/todos/${item.id}`}
+            linkTo={item.media_type === 'movie' ? `/tvsearch/filmes/todos/${item.id}` : `/tvsearch/series/todos/${item.id}`}
             />)
             }
             </div>

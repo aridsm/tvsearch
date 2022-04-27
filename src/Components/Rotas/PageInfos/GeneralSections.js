@@ -52,7 +52,8 @@ const GeneralSections = ({GET_API, type, title}) => {
       ?
       <TitleSections type={type} genreId={searchGenre} title={title}/>
       :
-      <h1>{title}</h1>}
+      <h1>{title}</h1>
+      }
       <section>
         {data && data.results.map(item =>
           <GeneralItem
