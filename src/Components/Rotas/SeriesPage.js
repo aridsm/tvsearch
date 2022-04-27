@@ -38,7 +38,7 @@ const SeriesPage = () => {
       vote={data.vote_average}
       overview={data.overview}
       />
-      <Credits type='tv' linkCredits='pessoas'/>
+      <Credits type='tv' linkCredits='tvsearch/pessoas'/>
       <Trailer type='tv' />
       <MoreInfos
       originalTitle={['Título original', data.original_name]}

@@ -25,7 +25,7 @@ if(data)
     <section>
         <p>{title}</p>
         <nav>
-        {data.genres.map(item => <Link to={`${pathName}/todos?pagina=1&categoria=${item.id}`} key={item.name}>{item.name}</Link>)}      
+        {data.genres.map(item => <Link to={`tvsearch/${pathName}/todos?pagina=1&categoria=${item.id}`} key={item.name}>{item.name}</Link>)}      
         </nav>
     </section>
   )

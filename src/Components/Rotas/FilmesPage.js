@@ -41,7 +41,7 @@ const FilmesPage = () => {
       vote={data.vote_average}
       overview={data.overview}
       />
-      <Credits type='movie' linkCredits='pessoas'/>
+      <Credits type='movie' linkCredits='tvsearch/pessoas'/>
       <Trailer type='movie'/>
       <MoreInfos 
       originalTitle={['Título original', data.original_title]}

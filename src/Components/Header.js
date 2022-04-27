@@ -39,15 +39,15 @@ const Header = () => {
         <MenuSvg />
       </button>
       }
-      <Link to='/' className={styles.logo} aria-label='Home'><FilmSvg />TVSearch</Link>
+      <Link to='/tvsearch' className={styles.logo} aria-label='Home'><FilmSvg />TVSearch</Link>
       <SearchForm
       label='Procure por um filme, programa de TV ou pessoa'
       type='search'/>
       <div className={`${styles.menu} ${mobileGeral ? styles.menuMobile : ''} ${isVisible ? styles.menuGeralAtivo : ''}`}>
       <nav>
-        <NavLink to='/filmes/todos?pagina=1'>Filmes</NavLink>
-        <NavLink to='/series/todos?pagina=1'>Séries</NavLink>
-        <NavLink to='/pessoas/todos?pagina=1'>Pessoas</NavLink>
+        <NavLink to='/tvsearch/filmes/todos?pagina=1'>Filmes</NavLink>
+        <NavLink to='/tvsearch/series/todos?pagina=1'>Séries</NavLink>
+        <NavLink to='/tvsearch/pessoas/todos?pagina=1'>Pessoas</NavLink>
       </nav>
       <button className={styles.mode} onClick={changeMode}>
         Mode: 
