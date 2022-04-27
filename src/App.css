@@ -151,12 +151,6 @@ h2 {
 
 @media all and (max-width: 500px) {
     .pagesContainer {
-        max-width: 23rem
-    }
-}
-
-@media all and (max-width: 360px) {
-    .pagesContainer {
-        max-width: 17rem
+        max-width: 21rem
     }
 }

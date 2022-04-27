@@ -39,29 +39,28 @@
    height:2.5rem;
    line-height: 2.5rem;
    background: var(--cor-3);
-   outline: 2px solid var(--cor-1);
-   outline-offset: -3px;
+   box-shadow: 0 0 0 2px transparent;
    border-radius: 50%;
    font-size: 0.875rem;
    font-weight: 900;
 }
 
 :global .good {
-    outline-color: var(--cor-6);
+    box-shadow: 0 0 0 2px var(--cor-6);
     color: var(--cor-6);
 }
 
 :global .bad {
-    outline-color: var(--cor-7);
+    box-shadow: 0 0 0 2px var(--cor-7);
     color:  var(--cor-7)
 }
 
 :global .medium {
-    outline-color: var(--cor-8);
+    box-shadow: 0 0 0 2px var(--cor-8);
     color: var(--cor-8)
 }
 
 :global .null {
-    outline-color: var(--cor-9);
+    box-shadow: 0 0 0 2px var(--cor-9);
     color: var(--cor-9)
 }
