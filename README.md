@@ -7,5 +7,6 @@ Website de busca de informações de filmes, séries e personalidades da televis
 Feito com React Js, CSS e HTML. Prototipagem feita com Figma.
 
 ## Link do projeto
-https://aridsm.github.io/tvsearch/
+https://aridsm.github.io/tvsearch
 
+![website](https://github.com/aridsm/tvsearch/blob/master/src/assets/tvsearch.gif)
