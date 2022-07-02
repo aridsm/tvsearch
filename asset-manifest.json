@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tvsearch/static/css/main.70f5d616.css",
-    "main.js": "/tvsearch/static/js/main.b868314c.js",
+    "main.css": "/tvsearch/static/css/main.81079cc9.css",
+    "main.js": "/tvsearch/static/js/main.03f0d328.js",
     "static/media/menu.svg": "/tvsearch/static/media/menu.7f30709c9555014c9f86dcc3b4477cbb.svg",
     "static/media/logotmdb.svg": "/tvsearch/static/media/logotmdb.bf7f470b3821af1da7fa249c87dadea3.svg",
-    "static/media/moon.svg": "/tvsearch/static/media/moon.fbc60aef59722784f510350dcf9f2a53.svg",
-    "static/media/sun.svg": "/tvsearch/static/media/sun.bd86f0c8e2f3b279fee028114448d5b2.svg",
+    "static/media/moon.svg": "/tvsearch/static/media/moon.c21fdfdfe098086f56e3a5d42df8e828.svg",
+    "static/media/sun.svg": "/tvsearch/static/media/sun.8f426b4b7a0bfdad34b6d5e078f34cbd.svg",
     "index.html": "/tvsearch/index.html",
-    "static/media/github.svg": "/tvsearch/static/media/github.5e7430d6e293bb002753a6c98bd8172a.svg",
-    "static/media/link.svg": "/tvsearch/static/media/link.16a095ff8df27b5119af609301d69b30.svg",
-    "static/media/film.svg": "/tvsearch/static/media/film.44e6b45cf3936ddccf6e4bc91199708c.svg",
-    "static/media/list.svg": "/tvsearch/static/media/list.a88f61d80d3fbadea343bb206ab287c0.svg",
-    "static/media/search.svg": "/tvsearch/static/media/search.10ddad2caf268fabea1d9546488728fc.svg",
-    "main.70f5d616.css.map": "/tvsearch/static/css/main.70f5d616.css.map",
-    "main.b868314c.js.map": "/tvsearch/static/js/main.b868314c.js.map"
+    "static/media/github.svg": "/tvsearch/static/media/github.1ca3a4949d82498f4b2261025162f523.svg",
+    "static/media/link.svg": "/tvsearch/static/media/link.4b5186122bc961e8696aaed2e8dcadc4.svg",
+    "static/media/film.svg": "/tvsearch/static/media/film.088fffd8cebc8260ff999ff8a974f983.svg",
+    "static/media/list.svg": "/tvsearch/static/media/list.f323258de4d2c5b6b0fa55b8eb724d2d.svg",
+    "static/media/search.svg": "/tvsearch/static/media/search.a4513f8385efb3b1881bd0fe06e64373.svg",
+    "main.81079cc9.css.map": "/tvsearch/static/css/main.81079cc9.css.map",
+    "main.03f0d328.js.map": "/tvsearch/static/js/main.03f0d328.js.map"
   },
   "entrypoints": [
-    "static/css/main.70f5d616.css",
-    "static/js/main.b868314c.js"
+    "static/css/main.81079cc9.css",
+    "static/js/main.03f0d328.js"
   ]
 }
